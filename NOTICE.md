@@ -1,6 +1,6 @@
 # Third-party notice
 
-The skills in this repository are by h00man23 under the MIT License (`LICENSE`). Some skills include copies of files from the projects below. Each copy keeps its own license. The license texts are in `licenses/`, or in the copied folder when the folder has its own license file.
+The skills in this repository are by h00mankind under the MIT License (`LICENSE`). Some skills include copies of files from the projects below. Each copy keeps its own license. The license texts are in `licenses/`, or in the copied folder when the folder has its own license file.
 
 | Source | Author | License | Used in |
 |---|---|---|---|

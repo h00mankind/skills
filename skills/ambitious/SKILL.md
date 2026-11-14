@@ -49,5 +49,5 @@ Request (if empty, the one the user is asking about in this conversation): $ARGU
 
 ## Sources
 
-- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): the earlier `h00man:ambitious` skill. It gives the ask-once step, the five-section recipe, and the handoff.
+- h00man, by h00mankind (https://github.com/h00mankind/skills, MIT): the earlier `h00man:ambitious` skill. It gives the ask-once step, the five-section recipe, and the handoff.
 - pstack, by Lauren Tan (https://github.com/cursor/plugins/tree/main/pstack, ported at https://github.com/h00mankind/pstack, MIT): the `sharpen` skill, copied to `references/pstack-sharpen.md`, gives the four questions that find the deeper goal. The `unslop` skill, copied to `references/pstack-unslop.md`, gives the catalog of AI patterns to keep out of the prompt.

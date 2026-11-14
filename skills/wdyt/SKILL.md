@@ -23,4 +23,4 @@ Idea (if empty, the one the user is asking about in this conversation): $ARGUMEN
 
 ## Sources
 
-- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): this skill is the earlier `h00man:wdyt`, now a command.
+- h00man, by h00mankind (https://github.com/h00mankind/skills, MIT): this skill is the earlier `h00man:wdyt`, now a command.

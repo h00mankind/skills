@@ -18,5 +18,5 @@ Do not name the mode in the reply. The reply is the mode's output and nothing el
 
 ## Sources
 
-- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): the earlier `h00man:eli5` and `h00man:caveman` skills, now `modes/eli5.md` and `modes/caveman.md`.
+- h00man, by h00mankind (https://github.com/h00mankind/skills, MIT): the earlier `h00man:eli5` and `h00man:caveman` skills, now `modes/eli5.md` and `modes/caveman.md`.
 - pstack, by Lauren Tan (https://github.com/cursor/plugins/tree/main/pstack, ported at https://github.com/h00mankind/pstack, MIT): the `bro` skill, copied to `references/pstack-bro.md`, for the default mode.

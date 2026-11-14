@@ -81,7 +81,7 @@ Each upstream `SKILL.md` in `references/` is named `SKILL.ref.md`, so that no ha
 
 ## Sources
 
-- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): the earlier `h00man:variants` skill. It gives the range axes, the moves that produce less obvious variants, the one-sentence test, and the recommend step.
+- h00man, by h00mankind (https://github.com/h00mankind/skills, MIT): the earlier `h00man:variants` skill. It gives the range axes, the moves that produce less obvious variants, the one-sentence test, and the recommend step.
 - matt, by Matt Pocock (https://github.com/mattpocock/skills, MIT): the `prototype` skill, copied to `references/matt-prototype`. It gives the variants on a real page behind `?variant=`, the throwaway route as a last resort, and the anti-patterns.
 - pele, by kepano (https://pele.run, MIT): the Mermaid renderer that low-fidelity mode loads from the CDN. `references/lofi/LOFI.md` is written here, from its docs and examples.
 - emil, by Emil Kowalski (https://github.com/emilkowalski/skill, MIT): the `prototype` skill, copied to `references/emil-prototype`. It gives the picker, the craft bar, the named axis per variant, and the `riff` and `keep` commands.

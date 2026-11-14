@@ -107,4 +107,4 @@ Do not change the background, camera angle, or framing.
 
 ## Sources
 
-- **h00man:prompt** by h00man23, https://github.com/h00mankind/skills, MIT. Takes the routing, the model defaults, the output modes, the guardrails, the example, and `references/models.md`, narrowed to image, video, and audio.
+- **h00man:prompt** by h00mankind, https://github.com/h00mankind/skills, MIT. Takes the routing, the model defaults, the output modes, the guardrails, the example, and `references/models.md`, narrowed to image, video, and audio.

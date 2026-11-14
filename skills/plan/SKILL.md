@@ -71,6 +71,6 @@ By default, the slices stay in the PRD as sections with checkboxes. If the repo 
 
 ## Sources
 
-- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): the earlier `h00man:plan` skill. It gives the two modes, the knowledge base rules, the PRD sections, the slices, and the publish step.
+- h00man, by h00mankind (https://github.com/h00mankind/skills, MIT): the earlier `h00man:plan` skill. It gives the two modes, the knowledge base rules, the PRD sections, the slices, and the publish step.
 - matt, by Matt Pocock (https://github.com/mattpocock/skills, MIT): the `grilling` skill, copied to `references/matt-grilling.md`, for the interview in rounds. The `grill-with-docs` skill, copied to `references/matt-grill-with-docs.md`, for the pairing of grilling with domain modeling. The `domain-modeling` skill, copied to `references/domain-modeling/`, for term challenges, ADR rules, and the entry formats.
 - pstack, by Lauren Tan (https://github.com/cursor/plugins/tree/main/pstack, ported at https://github.com/h00mankind/pstack, MIT): the `unslop` skill, copied to `references/pstack-unslop.md`, for the numbered catalog of AI patterns to keep out of the PRD.

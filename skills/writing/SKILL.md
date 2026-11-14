@@ -76,4 +76,4 @@ Each upstream `SKILL.md` in `references/` is named `SKILL.ref.md`, so that no ha
 
 - **pstack** by Lauren Tan (poteto), Claude Code port at https://github.com/h00mankind/pstack, MIT. Takes `technical-writing` (the four layers for docs, commits, and PRs) and `unslop` (the numbered catalog of AI patterns for all text).
 - **matt** by Matt Pocock, https://github.com/mattpocock/skills, MIT. Takes `writing-for-agents` (context pointers, the two loads, the information hierarchy, and skill mechanics).
-- **h00man:unslop** by h00man23, https://github.com/h00mankind/skills, MIT, derived from Lauren Tan's unslop. Takes the line-edit contract for supplied prose, which protects the author's facts and certainty.
+- **h00man:unslop** by h00mankind, https://github.com/h00mankind/skills, MIT, derived from Lauren Tan's unslop. Takes the line-edit contract for supplied prose, which protects the author's facts and certainty.

@@ -69,7 +69,7 @@ Give the guardrails reply first. Then list the friction proposals and the skill-
 
 ## Sources
 
-- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): the `h00man:guardrails` draft, copied to `references/guardrails/`. It is the main method. It gives the bar, the five levels, the steps, `GUARDRAILS.md`, `TASTE.md`, and the UI pack.
+- h00man, by h00mankind (https://github.com/h00mankind/skills, MIT): the `h00man:guardrails` draft, copied to `references/guardrails/`. It is the main method. It gives the bar, the five levels, the steps, `GUARDRAILS.md`, `TASTE.md`, and the UI pack.
 - matt, by Matt Pocock (https://github.com/mattpocock/skills, MIT): the `retro` skill, copied to `references/matt-retro.md`, for the kinds of environment fix and where each kind of text lives.
 - pstack, by Lauren Tan (https://github.com/cursor/plugins/tree/main/pstack, ported at https://github.com/h00mankind/pstack, MIT): the `reflect` skill, copied to `references/reflect/`, for the reviewer panel and the transcript finder. The `correct` skill, copied to `references/pstack-correct.md`, as the older form of the guardrails ladder.
 - emil, by Emil Kowalski (https://github.com/emilkowalski/skill, MIT): the problem lists from `improve-animations`, `review-animations`, and `break-ui`, copied to `references/emil-*.md`, for the guardrails packs.

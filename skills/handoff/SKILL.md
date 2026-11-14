@@ -64,4 +64,4 @@ In T3 Code, start a new thread with that line only when the user asks for one.
 ## Sources
 
 - matt, by Matt Pocock (https://github.com/mattpocock/skills, MIT): the `handoff` skill, copied to `references/matt-handoff/`, for the save location, the pointer rule, the suggested skills, and redaction. The phase boundaries guide from `ask-matt`, copied to `references/matt-phase-boundaries.md`, for when a handoff fits.
-- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): the retired `h00man:handoff` rewrite, for the section list (goal, state, decisions, next steps, gotchas).
+- h00man, by h00mankind (https://github.com/h00mankind/skills, MIT): the retired `h00man:handoff` rewrite, for the section list (goal, state, decisions, next steps, gotchas).

@@ -47,5 +47,5 @@ If the product has no copy yet, use this default voice: plain, specific, and con
 
 ## Sources
 
-- **h00man:copywriting** by h00man23, https://github.com/h00mankind/skills, MIT. Takes the voice default, the rules, and the process for product copy.
+- **h00man:copywriting** by h00mankind, https://github.com/h00mankind/skills, MIT. Takes the voice default, the rules, and the process for product copy.
 - **pstack** by Lauren Tan (poteto), Claude Code port at https://github.com/h00mankind/pstack, MIT. Takes `unslop`, the numbered catalog of AI patterns to cut from a draft.
