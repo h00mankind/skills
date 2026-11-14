@@ -92,7 +92,7 @@ Each upstream `SKILL.md` in `references/` is named `SKILL.ref.md`, so that no ha
 
 ## Sources
 
-- h00man:ship, by h00man23, https://github.com/h00mankind/skills, Apache-2.0. Takes the process, the cleanup and report steps, and the boundaries.
+- h00man:ship, by h00man23, https://github.com/h00mankind/skills, MIT. Takes the process, the cleanup and report steps, and the boundaries.
 - tstack, by Theo Browne (https://github.com/t3dotgg/tstack), MIT. Takes `file-pr`, `babysit-pr` with its `pr-wait` script, `full-send`, `full-stop`, `sol-loop`, `leaving-pr-comments`, `modernize`, and `takeover`.
 - pstack, by Lauren Tan, ported for Claude Code and Codex by h00man (https://github.com/cursor/plugins, folder `pstack`), MIT. Takes `babysit` for the triage order and hard rules, `fix-ci`, `fix-merge-conflicts`, `get-pr-comments`, and `make-pr-easy-to-review`.
 - matt, by Matt Pocock (https://github.com/mattpocock/skills), MIT. Takes `pr`, the PR body template. Its Summary visuals come from Dex Horthy's `show-me` skill (Humanlayer), as its `CREDITS.md` says.

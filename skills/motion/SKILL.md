@@ -92,7 +92,7 @@ Each upstream `SKILL.md` in `references/` is named `SKILL.ref.md`, so that no ha
 
 ## Sources
 
-- **h00man**: `h00man:motion`, h00man23's earlier motion skill, https://github.com/h00mankind/skills, Apache-2.0. Takes the frequency rule, the defaults, the details, the spring rule, and the verify steps.
+- **h00man**: `h00man:motion`, h00man23's earlier motion skill, https://github.com/h00mankind/skills, MIT. Takes the frequency rule, the defaults, the details, the spring rule, and the verify steps.
 - **emil**: `animate`, `animate-expo`, `choreograph`, `gestures`, `animation-performance`, `animation-vocabulary`, `find-animation-opportunities`, `remove-animations`, `improve-animations`, and `review-animations` by Emil Kowalski, https://github.com/emilkowalski/skill, MIT. Takes the animation workflows, recipes, audits, and review standards.
 - **rndrealm**: `fluid-interactions` by Seun Oyediran, https://github.com/rndrealm/fluid-interactions, MIT. Takes gesture physics, springs by response, and the drag code.
 - **mickadesign**: `fluid-functionalism` by Micka Touillaud, https://github.com/mickadesign/fluid-functionalism, MIT. Takes the @fluid spring tokens in `references/fluid-custom-motion.md`.

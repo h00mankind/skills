@@ -100,6 +100,6 @@ verifiers: codex/gpt-6.1-terra @high | opus @high
 
 ## Credits and license
 
-The skills are under the Apache License 2.0. See [`LICENSE`](LICENSE).
+The skills are under the MIT License. See [`LICENSE`](LICENSE).
 
 Many skills include files from other authors, such as pstack by Lauren Tan, Matt Pocock's skills, and Emil Kowalski's animation skill. Those files keep their own licenses. [`NOTICE.md`](NOTICE.md) lists each source and its license, and each `SKILL.md` ends with a Sources section.

@@ -145,4 +145,4 @@ When the user asks whether to *change* a current name, read `references/rebrand.
 
 ## Sources
 
-- h00man, by h00man23 (https://github.com/h00mankind/skills, Apache-2.0): this skill is the earlier `h00man:name`, with the artifact steps moved to `references/artifact.md`.
+- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): this skill is the earlier `h00man:name`, with the artifact steps moved to `references/artifact.md`.

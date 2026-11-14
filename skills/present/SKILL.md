@@ -107,6 +107,6 @@ Each upstream `SKILL.md` in `references/` is named `SKILL.ref.md`, so that no ha
 
 ## Sources
 
-- **h00man:html** by h00man23, https://github.com/h00mankind/skills, Apache-2.0. Takes the trigger rules, the theme choices, the plumbing in `references/snippets.md`, the constraints, the save path, and the catalog.
+- **h00man:html** by h00man23, https://github.com/h00mankind/skills, MIT. Takes the trigger rules, the theme choices, the plumbing in `references/snippets.md`, the constraints, the save path, and the catalog.
 - **benji** (stageshow) by Benji Taylor, https://github.com/benjitaylor/skills, MIT (see `references/stageshow/NOTICE.md` for third-party marks and assets). Takes the whole stageshow folder: the skill, the React kit, the gold examples, the teaching pairs, and the film scripts for faux product UI.
 - **pstack** by Lauren Tan (poteto), Claude Code port at https://github.com/h00mankind/pstack, MIT. Takes `unslop`, the numbered catalog of AI patterns to keep out of the artifact's text.

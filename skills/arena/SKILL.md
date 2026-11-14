@@ -48,5 +48,5 @@ Follow `modes/benchmark.md`. It is the user's own method. The words after `bench
 
 ## Sources
 
-- h00man, by h00man23 (https://github.com/h00mankind/skills, Apache-2.0): the earlier `h00man:benchmark` skill, now `modes/benchmark.md`. It gives the benchmark mode: calibrated tasks, hermetic runs, the blind judge, and the report.
+- h00man, by h00man23 (https://github.com/h00mankind/skills, MIT): the earlier `h00man:benchmark` skill, now `modes/benchmark.md`. It gives the benchmark mode: calibrated tasks, hermetic runs, the blind judge, and the report.
 - pstack, by Lauren Tan (https://github.com/cursor/plugins/tree/main/pstack, ported at https://github.com/h00mankind/pstack, MIT): the `arena` skill, copied to `references/pstack-arena.md`, for the arena mode. The principle skills it names, copied to `references/pstack-principle-*.md`.
