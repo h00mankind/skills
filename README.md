@@ -18,7 +18,19 @@ The CLI asks which skills and which agents you want. To install for all your pro
 npx skills add h00mankind/skills -g
 ```
 
-To install some skills without the prompts, name the skills and the agents:
+### Install one skill
+
+Put the skill name after `@`:
+
+```sh
+npx skills add h00mankind/skills@wdyt
+```
+
+Add `-g` to install it for all your projects. Some skills need `build` next to them. See [Keep `build` next to the skills that read it](#keep-build-next-to-the-skills-that-read-it).
+
+### Install some skills without the prompts
+
+Name each skill with `--skill` and each agent with `-a`:
 
 ```sh
 npx skills add h00mankind/skills --skill build --skill ship -a claude-code -a codex -y
@@ -26,7 +38,9 @@ npx skills add h00mankind/skills --skill build --skill ship -a claude-code -a co
 
 To see the skills before you install, run `npx skills add h00mankind/skills --list`.
 
-The CLI keeps one copy of each skill in `.agents/skills/` (or `~/.agents/skills/` with `-g`) and links it into the folder of each agent, such as `.claude/skills/`. In a project, it also writes `skills-lock.json`, which pins the version of each skill.
+### Where the files go
+
+For one agent, the CLI copies each skill into the folder of that agent, such as `.claude/skills/`. For more than one agent, it keeps one copy in `.agents/skills/` (or `~/.agents/skills/` with `-g`) and links it into the folder of each agent. In a project, it also writes `skills-lock.json`, which pins the version of each skill.
 
 ### Install the subagents for Claude Code
 
