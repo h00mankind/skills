@@ -14,5 +14,6 @@ The skills in this repository are by h00mankind under the MIT License (`LICENSE`
 | [mickadesign/fluid-functionalism](https://github.com/mickadesign/fluid-functionalism) | Micka Touillaud | MIT | motion, ui |
 | [heydamir/unslop](https://github.com/heydamir/unslop) | Damir Sokolovsky | CC BY 4.0 | ui |
 | [anthropics/skills](https://github.com/anthropics/skills) (frontend-design) | Anthropic | Apache-2.0 | ui |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) (web-design-guidelines), from [web-interface-guidelines](https://github.com/vercel-labs/web-interface-guidelines) | Vercel, Rauno Freiberg | MIT | motion, ui |
 
 Each skill's `SKILL.md` ends with a Sources section. It names what the skill takes from each source.

@@ -13,6 +13,7 @@ Find the job in the request, then read the files for that job. Each file under `
 
 - **New UI or a new direction.** Read `references/frontend-design/SKILL.ref.md`. Take the subject-first direction, the two-pass plan (tokens, then a review against the brief), and the list of default looks to avoid.
 - **Build or refine components.** Read `references/emil-design-eng/SKILL.ref.md`. Take the component rules and the review checklist. Its motion sections belong to the motion skill. Follow that skill when it is installed.
+- **Web platform details: keyboard, focus, forms, accessibility, touch, locale, and page performance.** Read `references/web-design-guidelines/SKILL.ref.md`, then `references/web-design-guidelines/references/command.md` for the rules. Apply the rules when you build. When you review, check each rule against the code.
 - **Apple-style feel.** Read `references/apple-design/SKILL.ref.md` for materials, depth, typography (optical size, tracking, leading), and the design foundations. For its gesture and spring sections, use the motion skill.
 - **AI-looking UI.** Read `references/unslop/SKILL.ref.md` and run its passes in its order. Keep the features, content, and section order. Change only the craft.
 - **Pick a library.** Read `references/pick-ui-library/SKILL.ref.md`. Check `package.json` first. Recommend one library.
@@ -30,17 +31,29 @@ A request can need more than one job. Do them in this order: direction, structur
 3. **Check the plan.** Ask if the plan could fit any other product. If yes, change that part and say what you changed.
 4. **Build.** Use real content from the product. Do not use lorem ipsum.
 5. **Look at it.** Take a screenshot at desktop and at phone width. Check light and dark themes, keyboard focus, and contrast. A screenshot shows faults that you cannot see in the code.
-6. **Stress it.** For a screen that renders data, run the worst-case pass from `break-ui`.
+6. **Stress it.** For a screen that renders data, run the worst-case pass from `break-ui`. Then check the code against the rules in `web-design-guidelines`.
 7. **Cut one thing.** Remove one decoration that does not serve the user.
 
 ## Choices only h00man makes
 
-- **One source of truth for a rule.** When two files disagree, follow the more specific file. The order is: the user's words, then `fluid-functionalism` in a project with @fluid, then `unslop` for cleanup work, then `frontend-design` for new direction, then `emil-design-eng`.
+- **One source of truth for a rule.** When two files disagree, follow the more specific file. The order is: the user's words, then `fluid-functionalism` in a project with @fluid, then `unslop` for cleanup work, then `frontend-design` for new direction, then `emil-design-eng`, then `web-design-guidelines`.
 - **Follow Fluid Functionalism for its components.** In a project with @fluid, its motion tokens and hover patterns are fixed. Do not apply other spacing or radius rules on top of a registry component.
 - **Do not use a default AI look unless the user asks for it.** These looks include a warm cream page with a serif and a clay accent, an all-caps eyebrow over each heading, identical rounded cards, and gradient text. Both `frontend-design` and `unslop` list more.
-- **Copy in the UI.** Use sentence case and active verbs. A button says what it does. For longer product copy, use the copy skill.
+- **Copy in the UI.** Use sentence case and active verbs. A button says what it does. For longer product copy, use the copy skill. The "Content & Copy" rules in `web-design-guidelines` are Vercel house style. Ignore its Title Case and `&` rules.
 - **Library picks come from the list.** Use a library outside `pick-ui-library` only when the list does not cover the task. Say so when you do.
-- **Read-only reviews stay read-only.** When the user asks for a review, report findings in the format from `emil-design-eng`. Do not edit code until the user asks.
+- **Read-only reviews stay read-only.** When the user asks for a review, report findings in the format from `emil-design-eng`: one table with Before, After, and Why columns. Put the `file:line` in the Before cell. Do not use the output format in `web-design-guidelines`. Do not edit code until the user asks.
+
+## Craft rules
+
+These rules are not in the included files. They apply to every project.
+
+- **Decorative layers.** Give glows, gradients, noise, and overlays `pointer-events: none` and `aria-hidden="true"`. Decoration must not catch a click or a screen reader.
+- **Tooltips.** Put no button or link in a tooltip that opens on hover. Use a popover that opens on click. Do not put a tooltip on a disabled button, because keyboard and screen-reader users cannot focus it. Show the reason next to the button, or keep the button enabled and show the error after the click.
+- **Feedback at the trigger.** Show the result where the user acted. A Copy button changes to a check mark for a moment. Use a toast only for work that finishes away from the trigger or in the background.
+- **Stable states.** Do not change `font-weight` on hover, focus, or active. The text gets wider and the layout moves. Change color or background.
+- **Underlines mean links.** Underline only text that navigates. Use weight or color for emphasis.
+- **Line length.** Keep body text near 65ch.
+- **Small uppercase labels.** Add letter-spacing, about 0.04em to 0.08em, so the letters do not crowd.
 
 ## Upstream names in these files
 
@@ -49,6 +62,7 @@ The included files name other skills and paths. Map them as follows:
 - `<skill>` and `<skill folder>` in a script command mean the folder of that file. Run each script from the project root. Give the script by its absolute path in this skill folder. For example, run `node <this skill folder>/references/fluid-functionalism/scripts/stack.mjs`, and `node <this skill folder>/references/unslop/scripts/snapshot.mjs` for a live page.
 - `animate`, `animate-expo`, `gestures`, `review-animations`, `improve-animations`, and the other animation skills are in the motion skill. If motion is not installed, follow the motion rules in `emil-design-eng`.
 - `emil-design-eng`, `apple-design`, `pick-ui-library`, `ask-sonner`, `break-ui`, and `mobile-native` mean the folders of the same name under `references/`.
+- `web-design-guidelines` means the folder of the same name under `references/`. Its SKILL.ref.md tells you to update the rules from the network. Do not do that. Use the copy in this folder.
 - `prototype` is the h00man `variants` command. Tell the user to run `/variants`. Do not invoke it yourself.
 - Each emil file starts with an "Initial Response" section. Ignore it. Do the task.
 
@@ -57,4 +71,5 @@ The included files name other skills and paths. Map them as follows:
 - **anthropic**: `frontend-design` by Anthropic, https://github.com/anthropics/skills, Apache-2.0. Takes visual direction, the two-pass plan, and the list of default looks.
 - **emil**: `emil-design-eng`, `apple-design`, `pick-ui-library`, `ask-sonner`, `break-ui`, and `mobile-native` by Emil Kowalski, https://github.com/emilkowalski/skill, MIT. Takes component craft, Apple-style materials and type, library picks, Sonner setup, worst-case data tests, and mobile web fixes.
 - **heydamir**: `unslop` by Damir Sokolovsky, https://github.com/heydamir/unslop, CC BY 4.0. Takes the passes that turn AI-looking UI into a designed interface. The copy keeps the author's credit.
+- **vercel**: `web-design-guidelines` by Vercel, https://github.com/vercel-labs/agent-skills, MIT. Its rules come from the Web Interface Guidelines by Rauno Freiberg and Vercel, https://github.com/vercel-labs/web-interface-guidelines, MIT. Takes the rules for keyboard, focus, forms, accessibility, touch, locale, content, and page performance.
 - **mickadesign**: `fluid-functionalism` by Micka Touillaud, https://github.com/mickadesign/fluid-functionalism, MIT. Takes the @fluid component catalog, craft notes, and stack scripts.
