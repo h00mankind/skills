@@ -46,6 +46,10 @@ Match motion to the component. A playful thing can bounce a little. A profession
 - Use `@starting-style` for entry without JS. Fall back to a mounted attribute.
 - For off-screen positions, use `translateY(100%)`, not fixed pixels.
 - If a crossfade does not blend, add `filter: blur(2px)` during the change.
+- Turn transitions off while the theme changes. Add a class such as `[data-theme-switching] * { transition: none !important }` for one frame. Otherwise each element changes color at its own speed.
+- A stagger must not block input. The user can click an item before the last item arrives.
+- Motion that plays by itself for more than 5 seconds next to other content gets a pause, stop, or hide control. Muted decorative loops stop under `prefers-reduced-motion`.
+- For SVG, put the transform on a `<g>` wrapper with `transform-box: fill-box`. Safari places the origin wrongly on other SVG elements. Set `transform-origin` to the real pivot, `center` only when the shape turns around its center.
 
 ## Springs and gestures
 
@@ -96,3 +100,4 @@ Each upstream `SKILL.md` in `references/` is named `SKILL.ref.md`, so that no ha
 - **emil**: `animate`, `animate-expo`, `choreograph`, `gestures`, `animation-performance`, `animation-vocabulary`, `find-animation-opportunities`, `remove-animations`, `improve-animations`, and `review-animations` by Emil Kowalski, https://github.com/emilkowalski/skill, MIT. Takes the animation workflows, recipes, audits, and review standards.
 - **rndrealm**: `fluid-interactions` by Seun Oyediran, https://github.com/rndrealm/fluid-interactions, MIT. Takes gesture physics, springs by response, and the drag code.
 - **mickadesign**: `fluid-functionalism` by Micka Touillaud, https://github.com/mickadesign/fluid-functionalism, MIT. Takes the @fluid spring tokens in `references/fluid-custom-motion.md`.
+- **vercel**: the Web Interface Guidelines by Rauno Freiberg and Vercel, https://github.com/vercel-labs/web-interface-guidelines, MIT. Takes the autoplay and SVG transform rules.
