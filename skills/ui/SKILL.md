@@ -1,6 +1,6 @@
 ---
 name: ui
-description: Design, build, or review the look of an interface. Sets a visual direction, then works on layout, type, color, spacing, and components. Picks a UI library, stress-tests a screen with worst-case data, makes a web app feel native on a phone, and cleans up UI that looks AI-generated. Use when the user asks to design a page or screen, build a component, polish or redesign UI, pick a UI library (for example Radix, shadcn, Mantine, or MUI), "unslop" a screen, "make it look less generic", or "try the worst case". For animation and gestures, use motion. For the words in a UI, such as labels, errors, and empty states, use copy.
+description: Design, build, or review the look of an interface. Sets a visual direction, then works on layout, type, color, spacing, and components. Picks a UI library, stress-tests a screen with worst-case data, makes a web app feel native on a phone, checks keyboard, focus, forms, and accessibility against web interface guidelines, and cleans up UI that looks AI-generated. Use when the user asks to design a page or screen, build a component, polish or redesign UI, pick a UI library (for example Radix, shadcn, Mantine, or MUI), "unslop" a screen, "make it look less generic", or "try the worst case". For animation and gestures, use motion. For the words in a UI, such as labels, errors, and empty states, use copy.
 ---
 
 # ui
@@ -13,7 +13,7 @@ Find the job in the request, then read the files for that job. Each file under `
 
 - **New UI or a new direction.** Read `references/frontend-design/SKILL.ref.md`. Take the subject-first direction, the two-pass plan (tokens, then a review against the brief), and the list of default looks to avoid.
 - **Build or refine components.** Read `references/emil-design-eng/SKILL.ref.md`. Take the component rules and the review checklist. Its motion sections belong to the motion skill. Follow that skill when it is installed.
-- **Web platform details: keyboard, focus, forms, accessibility, touch, locale, and page performance.** Read `references/web-design-guidelines/SKILL.ref.md`, then `references/web-design-guidelines/references/command.md` for the rules. Apply the rules when you build. When you review, check each rule against the code.
+- **Web platform details: keyboard, focus, forms, accessibility, touch, locale, and page performance.** Read `references/web-design-guidelines/SKILL.ref.md`, then `references/web-design-guidelines/references/command.md` for the rules. Apply the rules when you build. When you review, check each rule against the code. A native element that already works with the keyboard, such as `<button>` or `<a href>`, passes the keyboard rule. Do not add a key handler to it, because the action can then fire twice. Add key handlers only to custom controls.
 - **Apple-style feel.** Read `references/apple-design/SKILL.ref.md` for materials, depth, typography (optical size, tracking, leading), and the design foundations. For its gesture and spring sections, use the motion skill.
 - **AI-looking UI.** Read `references/unslop/SKILL.ref.md` and run its passes in its order. Keep the features, content, and section order. Change only the craft.
 - **Pick a library.** Read `references/pick-ui-library/SKILL.ref.md`. Check `package.json` first. Recommend one library.
@@ -49,9 +49,10 @@ These rules are not in the included files. They apply to every project.
 
 - **Decorative layers.** Give glows, gradients, noise, and overlays `pointer-events: none` and `aria-hidden="true"`. Decoration must not catch a click or a screen reader.
 - **Tooltips.** Put no button or link in a tooltip that opens on hover. Use a popover that opens on click. Do not put a tooltip on a disabled button, because keyboard and screen-reader users cannot focus it. Show the reason next to the button, or keep the button enabled and show the error after the click.
-- **Feedback at the trigger.** Show the result where the user acted. A Copy button changes to a check mark for a moment. Use a toast only for work that finishes away from the trigger or in the background.
+- **Feedback at the trigger.** Show the result where the user acted. A Copy button changes to a check mark for a moment. Use a toast only for work that finishes away from the trigger or in the background. This rule wins over the Publish toast example in `frontend-design`.
 - **Stable states.** Do not change `font-weight` on hover, focus, or active. The text gets wider and the layout moves. Change color or background.
 - **Underlines mean links.** Underline only text that navigates. Use weight or color for emphasis.
+- **License.** `LICENSE-vercel` in this folder is the license of `references/web-design-guidelines`.
 - **Line length.** Keep body text near 65ch.
 - **Small uppercase labels.** Add letter-spacing, about 0.04em to 0.08em, so the letters do not crowd.
 

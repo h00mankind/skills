@@ -49,7 +49,7 @@ Match motion to the component. A playful thing can bounce a little. A profession
 - Turn transitions off while the theme changes. Add a class such as `[data-theme-switching] * { transition: none !important }` for one frame. Otherwise each element changes color at its own speed.
 - A stagger must not block input. The user can click an item before the last item arrives.
 - Motion that plays by itself for more than 5 seconds next to other content gets a pause, stop, or hide control. Muted decorative loops stop under `prefers-reduced-motion`.
-- For SVG, put the transform on a `<g>` wrapper with `transform-box: fill-box; transform-origin: center`. Safari places the origin wrongly on other SVG elements.
+- For SVG, put the transform on a `<g>` wrapper with `transform-box: fill-box`. Safari places the origin wrongly on other SVG elements. Set `transform-origin` to the real pivot, `center` only when the shape turns around its center.
 
 ## Springs and gestures
 
